@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 var cors=require('cors')
-const PORT=process.env.PORT || 3000;
+//const PORT=process.env.PORT || 3000;
 app.use(cors)
 app.get('/', function (req, res) {
   res.send('Hello World')
@@ -17,4 +17,5 @@ app.get('/students', function (req, res) {
   ]
   res.send(data)
 })
-app.listen(PORT)
+app.listen(3000);
+//app.listen(PORT);
